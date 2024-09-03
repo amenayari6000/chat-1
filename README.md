@@ -55,10 +55,10 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 Here are some screenshots of the app:
 
 ![Open App](images/opning_app_%201_.jpg)
-![Online/Offline Status](images/onligne_image_recycle _2.jpg)
-![Signup](images/SIGNUP _3.jpg)
-![Send Text Message](images/SEND _TEXT_MESSAGE _4_.jpg)
-![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_ .jpg)
-![Delete Message](images/DELETE MESSAGE _7_.jpg)
-![Notification](images/NOTIFICATION _8_.jpg)
-![Kotlin Classes Structure](images/kotline_classes_structure _chat_9_.png)
+![Online/Offline Status](images/onligne_image_recycle%20_2.jpg)
+![Signup](images/SIGNUP%20_3.jpg)
+![Send Text Message](images/SEND%20_TEXT_MESSAGE%20_4_.jpg)
+![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_%20.jpg)
+![Delete Message](images/DELETE%20MESSAGE%20_7_.jpg)
+![Notification](images/NOTIFICATION%20_8_.jpg)
+![Kotlin Classes Structure](images/kotline_classes_structure%20_chat_9_.png)
