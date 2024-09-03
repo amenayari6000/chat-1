@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.CAPTURE_AUDIO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.MEDIA_S" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <!-- Update the package name for the entire application -->
+    <application
+
+
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.ChatApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="34">
+
+        <!-- Activities -->
+
+        <!-- Update the package name for each activity -->
+        <activity
+            android:name=".view.ChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".view.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".view.UserReceiverProfile"
+            android:exported="false" />
+        <activity
+            android:name=".view.UpdateSenderProfile"
+            android:exported="false" />
+        <activity
+            android:name=".view.UpdateSenderProfilePictureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.FullSizePhotoActivity"
+            android:exported="false" />
+
+
+        <!-- Main Launcher Activity -->
+        <!-- Update the package name for the launcher activity -->
+        <activity
+            android:name=".view.LogIn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Update the package name for MainActivity -->
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="false" />
+
+        <!-- Services -->
+        <!-- Update the package name for FirebaseService -->
+        <service
+            android:name=".utlilities.FirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Content Providers -->
+        <!-- Update the package name for the FileProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.walid591.chat.file-provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+    </application>
+
+    <!-- Permissions -->
+    <!-- Add your permissions here -->
+
+</manifest>

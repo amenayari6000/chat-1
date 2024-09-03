@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "568085524088",
+    "firebase_url": "https://chatapplication-b3c8a-default-rtdb.firebaseio.com",
+    "project_id": "chatapplication-b3c8a",
+    "storage_bucket": "chatapplication-b3c8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568085524088:android:beadb334b06b295f0b878d",
+        "android_client_info": {
+          "package_name": "com.walid591.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568085524088-g3hh8lku7vfg6jbs6c3qng5d181pgct7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfRVRujLYhoeZ87PHZSUhE8bjzYUpAQpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568085524088-g3hh8lku7vfg6jbs6c3qng5d181pgct7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

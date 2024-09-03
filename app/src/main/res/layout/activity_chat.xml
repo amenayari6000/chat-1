@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ChatActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageReceiverProfile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/profile" />
+
+
+    <!-- Add this button to your chat activity layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="210dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+
+            android:paddingTop="2dp"
+
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        tools:ignore="ExtraText">
+
+
+        <ImageButton
+            android:id="@+id/img_microphone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@string/record_button_description"
+            android:src="@drawable/microphone1" />
+
+        <ProgressBar
+            android:id="@+id/progressBarChatActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/messageBox"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="20"
+            android:background="@drawable/message_box_background"
+            android:hint="@string/type_a_message"
+            android:paddingStart="10dp"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/sentbutton"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:src="@drawable/sendmessage" />
+
+        <Button
+            android:id="@+id/btnSendImage"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+
+
+            android:layout_weight="20"
+
+
+            android:background="@drawable/profilee"
+
+            android:contentDescription="@string/Email_User" />
+
+        <ImageView
+            android:id="@+id/imageSenderProfile"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/profile"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutProgressBar"
+        android:layout_width="406dp"
+        android:layout_height="56dp"
+        android:layout_above="@id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-130dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+
+
+            android:src="@drawable/ic_pause" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRecording"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:id="@+id/btnSendAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_microphone1"
+            android:layout_centerHorizontal="true"
+
+
+            android:src="@drawable/sendaudio" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

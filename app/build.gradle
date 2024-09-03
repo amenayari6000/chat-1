@@ -1,0 +1,150 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace = "com.walid591.chat"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId "com.walid591.chat"
+        minSdk 27
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            // Ensure that test-related tasks are not run on release build
+            testCoverageEnabled = false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+
+
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+
+
+
+
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+
+}
+/*
+// duplicated file cause the conflict between common file google and firebase should excluded from dependency
+configurations.configureEach {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'com.google.api.grpc' && details.requested.name == 'proto-google-common-protos') {
+            details.useVersion '2.20.0'
+        }
+        if (details.requested.group == 'com.google.firebase' && details.requested.name == 'protolite-well-known-types') {
+            details.useVersion '18.0.0'
+        }
+        if (details.requested.group == 'com.google.protobuf' && details.requested.name == 'protobuf-java') {
+            details.useVersion '3.23.2'
+        }
+        if (details.requested.group == 'com.google.protobuf' && details.requested.name == 'protobuf-javalite') {
+            details.useVersion '3.22.3'
+        }
+    }
+}*/
+dependencies {
+    // Import the BoM for the Firebase platform
+    implementation(platform('com.google.firebase:firebase-bom:33.2.0'))
+
+    // Firebase Libraries with KTX
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    // excluded commune file between firebase and google cause conflict
+   /* implementation ('com.google.firebase:firebase-firestore-ktx') {
+        exclude group: 'com.google.api', module: 'proto-google-common-protos'
+        exclude group: 'com.google.firebase', module: 'protolite-well-known-types'
+        exclude group: 'com.google.protobuf', module: 'protobuf-javalite'
+
+    }*/
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //noinspection GradleDependency
+
+
+
+    // AndroidX Libraries
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.media3:media3-exoplayer:1.4.0'
+    implementation 'androidx.media3:media3-exoplayer-dash:1.4.0'
+    implementation 'androidx.media3:media3-ui:1.4.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
+
+
+    // Third-Party Libraries
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.24.1'
+    implementation 'com.google.cloud:google-cloud-core:2.42.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
+
+
+
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0'
+    // Kotlin Coroutines
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.4"
+
+
+    // Optional: If using AndroidX Lifecycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.8.4"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.4"
+    // Test dependencies
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    testImplementation 'junit:junit:4.13.2'
+
+}

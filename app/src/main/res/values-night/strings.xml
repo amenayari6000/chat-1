@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<string name="app_name">ChatApplication</string>
+<string name="log_in">Log_in</string>
+<string name="sign_up">Sign_Up</string>
+<string name="email">Email</string>
+<string name="password">password</string>
+<string name="profile">Profile</string>
+<string name="name">NAME</string>
+<string name="Email">EMAIL</string>
+<string name="Password">PASSWORD</string>
+<string name="Sign_up">SIGNUP</string>
+<string name="LogIn">Login</string>
+<string name="Sign_IN">Register</string>
+<string name="Email_User">Email_User</string>
+<string name="Password_User">Password_User</string>
+<string name="type_a_message">type_a_message</string>
+<string name="channel_name">channelId</string>
+<string name="channel_descriptionText">channel descriptionText </string>
+<string name="record_button_description">btn_record</string>
+<string name="this_is_send">This is send</string>
+<string name="play_receiver_audio">play receiver audio</string>
+<string name="del">Del</string>
+<string name="vue">√√</string>
+<string name="vu_send">√√</string>
+
+
+<color name="black">#000000</color>
+
+</resources>

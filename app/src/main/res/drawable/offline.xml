@@ -1,0 +1,9 @@
+<!-- res/drawable/circle.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/offline_color"/> <!-- Default color, can be overridden programmatically -->
+    <size
+        android:width="12dp"
+        android:height="12dp"
+        />
+</shape>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+
+                    android:id="@+id/img_send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:id="@+id/txt_send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toStartOf="@id/img_send_message"
+                    android:visibility="gone"
+
+                    android:background="@drawable/edt_background"
+                    android:ellipsize="end"
+                    android:gravity="center"
+
+                    android:padding="5dp"
+
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:scrollbars="vertical"
+
+
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                  />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+
+
+
+
+                <androidx.media3.ui.PlayerView
+                    android:id="@+id/audioPlayerSent"
+
+                    android:layout_width="221dp"
+                    android:layout_height="51dp"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+
+
+                    android:layout_marginStart="17dp"
+
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_toEndOf="@+id/delete_sender_audio"
+                    app:show_buffering="when_playing"
+                    app:show_shuffle_button="true">
+
+
+                </androidx.media3.ui.PlayerView>
+
+                <Button
+                    android:id="@+id/delete_sender_audio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:visibility="gone"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="37dp"
+
+
+                    android:layout_marginTop="19dp"
+                    android:src="@android:drawable/ic_delete"
+                    android:text="Del"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/status_sent"
+                android:layout_width="142dp"
+                android:layout_height="42dp"
+
+                android:layout_gravity="end"
+                android:layout_marginEnd="2dp"
+
+
+                android:gravity="end|center_vertical"
+                android:paddingBottom="5dp"
+
+                android:text="@string/vu_send"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry"
+
+                />
+
+            <TextView
+                android:id="@+id/timestampTextView"
+                android:layout_width="227dp"
+                android:layout_height="36dp"
+
+
+                android:layout_gravity="end"
+                android:layout_marginStart="0dp"
+
+                android:gravity="end|center_vertical"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginEnd="7dp"
+
+
+
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+
+
+                />
+
+            <!--
+                        android:id="@+id/timestampTextView"
+                        android:layout_width="189dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="start"
+
+                        android:layout_marginStart="7dp"
+                        android:layout_marginEnd="215dp"
+                        android:paddingTop="10dp"
+
+
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+
+
+-->
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>

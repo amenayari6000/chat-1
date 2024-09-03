@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.media3:media3-datasource:1.4.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/92139846af9fd7c1c1932a27ee9c40af/transformed/media3-datasource-1.4.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/92139846af9fd7c1c1932a27ee9c40af/transformed/media3-datasource-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/92139846af9fd7c1c1932a27ee9c40af/transformed/media3-datasource-1.4.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.media3/media3-datasource/1.4.0/7e17266c3e50e59d081bd5f589040037a04c5792/media3-datasource-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
