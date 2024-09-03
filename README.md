@@ -48,10 +48,17 @@ The following technologies and tools are used in the development of this chat ap
 
 ## YouTube Demo
 
-Check out the demo of the app on YouTube: [Watch Demo](#)
+Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZKGc)
 
 ## Screenshots
 
 Here are some screenshots of the app:
 
 ![Open App](images/opning_app_%201_.jpg)
+![Online/Offline Status](images/onligne_image_recycle _2.jpg)
+![Signup](images/SIGNUP _3.jpg)
+![Send Text Message](images/SEND _TEXT_MESSAGE _4_.jpg)
+![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_ .jpg)
+![Delete Message](images/DELETE MESSAGE _7_.jpg)
+![Notification](images/NOTIFICATION _8_.jpg)
+![Kotlin Classes Structure](images/kotline_classes_structure _chat_9_.png)
