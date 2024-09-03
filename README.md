@@ -64,4 +64,3 @@ Here are some screenshots of the app:
 ![Delete Message](images/DELETE MESSAGE _7_.jpg)
 ![Notification](images/NOTIFICATION _8_.jpg)
 ![Kotlin Classes Structure](images/kotline_classes_structure _chat_9_.png)
-
