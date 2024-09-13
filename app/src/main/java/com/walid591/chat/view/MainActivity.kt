@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.walid591.chat.R
@@ -43,10 +44,12 @@ class MainActivity : AppCompatActivity()
     private var userValueEventListener: ValueEventListener? = null
     
     override fun onCreate(savedInstanceState: Bundle?)
+    
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
+    
+        FirebaseApp.initializeApp(this)
         // Initialize Firebase
         mAuth = FirebaseAuth.getInstance()
         mDbRef = FirebaseDatabase.getInstance().reference

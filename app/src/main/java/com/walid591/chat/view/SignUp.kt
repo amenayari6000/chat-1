@@ -25,8 +25,12 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 
 import com.bumptech.glide.Glide
+import com.google.firebase.FirebaseApp
 
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.messaging.FirebaseMessaging
@@ -78,7 +82,7 @@ class SignUp : AppCompatActivity()
         setContentView(R.layout.activity_sign_up)
         
         Log.d("signup", "before action ")
-        
+        FirebaseApp.initializeApp(this)
         
         // Initialize views
         edtEmail = findViewById(R.id.edt_email)
@@ -170,66 +174,105 @@ class SignUp : AppCompatActivity()
     }
     
     
-  
-    private fun signUp(name: String, email: String, password: String) {
+    private fun signUp(name: String, email: String, password: String)
+    {
         // Input validation
-        if (name.isEmpty()) {
+        if (name.isEmpty())
+        {
             Toast.makeText(this, "Please enter your name.", Toast.LENGTH_SHORT).show()
             return
         }
-        
-        if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+    
+        if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches())
+        {
             Toast.makeText(this, "Please enter a valid email address.", Toast.LENGTH_SHORT).show()
             return
         }
-        
-        if (password.isEmpty() || password.length < 6) {
-            Toast.makeText(this, "Password must be at least 6 characters long.", Toast.LENGTH_SHORT).show()
+    
+        if (password.isEmpty() || password.length < 6)
+        {
+            Toast.makeText(this, "Password must be at least 6 characters long.", Toast.LENGTH_SHORT)
+                .show()
             return
         }
-        
+    
         // Show loading indicator
         showLoadingIndicator(true)
-        
-        mAuth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
+    
+        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
+                if (task.isSuccessful)
+                {
                     val currentUser = mAuth.currentUser
                     currentUser?.let { user ->
-                        // Handle the database operations in the background
                         lifecycleScope.launch {
-                            try {
-                                val fcmToken = getFcmToken()
-                                selectedImageUri?.let { uri ->
-                                    // Perform database operations in IO context
-                                    withContext(Dispatchers.IO) {
-                                        addUserToDatabase(name, email, user.uid, uri, fcmToken ?: "", true)
+                            try
+                            {
+                                val fcmToken =
+                                    getFcmToken() ?: "" // Default to empty string if null
+                                val profilePictureUrl = selectedImageUri?.let { uri ->
+                                    uploadProfilePicture(user.uid, uri)
+                                } ?: "" // Default to empty string if no image
+                            
+                                // Perform database operations
+                                val isAddedToDatabase = withContext(Dispatchers.IO) {
+                                    try
+                                    {
+                                        addUserToDatabase(
+                                            name, email, user.uid, profilePictureUrl, fcmToken, true
+                                                         )
+                                        true
+                                    } catch (e: Exception)
+                                    {
+                                        Log.e("SignUpError", "Error adding user to database", e)
+                                        false
                                     }
                                 }
-                                
-                                // Navigate to MainActivity and hide loading indicator
+                            
+                                // Navigate to MainActivity if the user was added to the database
                                 withContext(Dispatchers.Main) {
-                                    val intent = Intent(this@SignUp, MainActivity::class.java)
-                                    startActivity(intent)
-                                    finish() // Close SignUpActivity
+                                    if (isAddedToDatabase)
+                                    {
+                                        navigateToMainActivity()
+                                    } else
+                                    {
+                                        Toast.makeText(
+                                            this@SignUp,
+                                            "Error adding user to database.",
+                                            Toast.LENGTH_SHORT
+                                                      ).show()
+                                    }
                                     showLoadingIndicator(false)
                                 }
-                            } catch (e: Exception) {
+                            } catch (e: Exception)
+                            {
                                 Log.e("SignUpError", "Error during sign-up", e)
                                 withContext(Dispatchers.Main) {
-                                    Toast.makeText(this@SignUp, "Error adding user to database.", Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(
+                                        this@SignUp, "Error during sign-up.", Toast.LENGTH_SHORT
+                                                  ).show()
                                     showLoadingIndicator(false)
                                 }
                             }
                         }
                     }
-                } else {
-                    Log.e("SignUpError", "Registration failed", task.exception)
-                    Toast.makeText(this, "Registration failed. Please try again later.", Toast.LENGTH_SHORT).show()
+                } else
+                {
+                    val exception = task.exception
+                    Log.e("SignUpError", "Registration failed", exception)
+                    val errorMessage = when (exception)
+                    {
+                        is FirebaseAuthUserCollisionException -> "This email is already registered. Please use a different email or try logging in."
+                        is FirebaseAuthWeakPasswordException -> "Password is too weak. Please use a stronger password."
+                        is FirebaseAuthInvalidCredentialsException -> "Invalid email format. Please check your email and try again."
+                        else -> "Registration failed: ${exception?.message ?: "Unknown error"}. Please try again later."
+                    }
+                    Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show()
                     showLoadingIndicator(false)
                 }
+            
             }
     }
+    
     
     private suspend fun getFcmToken(): String? {
         return try {
@@ -278,18 +321,19 @@ class SignUp : AppCompatActivity()
     }
     
     
-  
+    
+    
+    
     private suspend fun addUserToDatabase(
         name: String,
         email: String,
         uid: String,
-        selectedImageUri: Uri,
+        profilePictureUrl: String,
         fcmToken: String,
         online: Boolean
                                          ) {
         withContext(Dispatchers.IO) {
             try {
-                val profilePictureUrl = uploadProfilePicture(uid, selectedImageUri)
                 val user = User(
                     name = name,
                     uid = uid,
@@ -301,10 +345,7 @@ class SignUp : AppCompatActivity()
                 val mDbRef = FirebaseDatabase.getInstance().getReference("users")
                 mDbRef.child(uid).setValue(user).await() // Ensure database write is completed
                 
-                withContext(Dispatchers.Main) {
-                    Log.d("SignUp", "User data successfully added to the database.")
-                    // If you need to perform additional UI operations, do them here
-                }
+                Log.d("SignUp", "User data successfully added to the database.")
             } catch (e: Exception) {
                 Log.e("SignUpError", "Error adding user to database", e)
                 withContext(Dispatchers.Main) {
@@ -312,6 +353,12 @@ class SignUp : AppCompatActivity()
                 }
             }
         }
+    }
+    
+    private fun navigateToMainActivity() {
+        val intent = Intent(this@SignUp, MainActivity::class.java)
+        startActivity(intent)
+        finish() // Close SignUpActivity
     }
     
     

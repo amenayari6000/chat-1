@@ -39,6 +39,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.google.firebase.FirebaseApp
 
 
 import com.google.firebase.auth.FirebaseAuth
@@ -168,7 +169,7 @@ class ChatActivity : AppCompatActivity()
         setContentView(R.layout.activity_chat)
         
        // Toast.makeText(this, "onCreate called", Toast.LENGTH_SHORT).show()
-        
+        FirebaseApp.initializeApp(this)
         // Call initialization methods
         initializeFirebaseAndUserIDs()
         
