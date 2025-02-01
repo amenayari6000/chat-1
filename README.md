@@ -54,17 +54,15 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 
 Here are some screenshots of the app:
 ## App Screenshots
-## App Screenshots
-## App Screenshots
 
-| Open App | Online/Offline Status | Signup |
-|----------|----------------------|--------|
-| ![Open App](images/opning_app_%201_.jpg) | ![Online/Offline Status](images/onligne_image_recycle_%202.jpg) | ![Signup](images/SIGNUP_%203.jpg) |
+| opning_app_1_.jpg | onligne_image_recycle_2.jpg | SIGNUP_3.jpg |
+|-------------------|-----------------------------|--------------|
+| ![opning_app_1_](images/opning_app_1_.jpg) | ![onligne_image_recycle_2](images/onligne_image_recycle_2.jpg) | ![SIGNUP_3](images/SIGNUP_3.jpg) |
 
-| Send Text Message | Send Image Message | Send Audio Message |
-|------------------|------------------|------------------|
-| ![Send Text Message](images/SEND _%20TEXT_MESSAGE_%204_4_.jpg) | ![Send Image Message](images/SEND_IMAGE%20MESSAGE_%205_.jpg) | ![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_%20.jpg) 
+| SEND_TEXT_MESSAGE_4.jpg | SEND_IMAGE_MESSAGE_5.jpg | SEND_AUDIO_MESSAGE_6.jpg |
+|-------------------------|--------------------------|--------------------------|
+| ![SEND_TEXT_MESSAGE_4](images/SEND_TEXT_MESSAGE_4.jpg) | ![SEND_IMAGE_MESSAGE_5](images/SEND_IMAGE_MESSAGE_5.jpg) | ![SEND_AUDIO_MESSAGE_6](images/SEND_AUDIO_MESSAGE_6.jpg) |
 
-| Delete Message | Notification | Kotlin Classes Structure |
-|---------------|-------------|-------------------------|
-| ![Delete Message](images/DELETE%20MESSAGE_%207_.jpg) | ![Notification](images/NOTIFICATION_%208_.jpg) | ![Kotlin Classes Structure](images/kotline_classes_structure%20_chat_%209_.png) |
+| DELETE_MESSAGE_7.jpg | NOTIFICATION_8.jpg | kotline_classes_structure_chat_9.png |
+|----------------------|---------------------|-------------------------------------|
+| ![DELETE_MESSAGE_7](images/DELETE_MESSAGE_7.jpg) | ![NOTIFICATION_8](images/NOTIFICATION_8.jpg) | ![kotline_classes_structure_chat_9](images/kotline_classes_structure_chat_9.png) |
