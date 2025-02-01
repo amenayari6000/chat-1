@@ -55,14 +55,16 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 Here are some screenshots of the app:
 ## App Screenshots
 
-| opning_app_1_.jpg | onligne_image_recycle_2.jpg | SIGNUP_3.jpg |
-|-------------------|-----------------------------|--------------|
+## App Screenshots
+
+| [opning_app_1_.jpg](images/opning_app_1_.jpg) | [onligne_image_recycle_2.jpg](images/onligne_image_recycle_2.jpg) | [SIGNUP_3.jpg](images/SIGNUP_3.jpg) |
+|-----------------------------------------------|---------------------------------------------------------------|-----------------------------------|
 | ![opning_app_1_](images/opning_app_1_.jpg) | ![onligne_image_recycle_2](images/onligne_image_recycle_2.jpg) | ![SIGNUP_3](images/SIGNUP_3.jpg) |
 
-| SEND_TEXT_MESSAGE_4.jpg | SEND_IMAGE_MESSAGE_5.jpg | SEND_AUDIO_MESSAGE_6.jpg |
-|-------------------------|--------------------------|--------------------------|
+| [SEND_TEXT_MESSAGE_4.jpg](images/SEND_TEXT_MESSAGE_4.jpg) | [SEND_IMAGE_MESSAGE_5.jpg](images/SEND_IMAGE_MESSAGE_5.jpg) | [SEND_AUDIO_MESSAGE_6.jpg](images/SEND_AUDIO_MESSAGE_6.jpg) |
+|--------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------|
 | ![SEND_TEXT_MESSAGE_4](images/SEND_TEXT_MESSAGE_4.jpg) | ![SEND_IMAGE_MESSAGE_5](images/SEND_IMAGE_MESSAGE_5.jpg) | ![SEND_AUDIO_MESSAGE_6](images/SEND_AUDIO_MESSAGE_6.jpg) |
 
-| DELETE_MESSAGE_7.jpg | NOTIFICATION_8.jpg | kotline_classes_structure_chat_9.png |
-|----------------------|---------------------|-------------------------------------|
+| [DELETE_MESSAGE_7.jpg](images/DELETE_MESSAGE_7.jpg) | [NOTIFICATION_8.jpg](images/NOTIFICATION_8.jpg) | [kotline_classes_structure_chat_9.png](images/kotline_classes_structure_chat_9.png) |
+|----------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------|
 | ![DELETE_MESSAGE_7](images/DELETE_MESSAGE_7.jpg) | ![NOTIFICATION_8](images/NOTIFICATION_8.jpg) | ![kotline_classes_structure_chat_9](images/kotline_classes_structure_chat_9.png) |
