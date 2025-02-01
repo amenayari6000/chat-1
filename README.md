@@ -52,14 +52,34 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 
 ## Screenshots
 
+## App Screenshots
 
-![opning_app_ 1_](https://github.com/user-attachments/assets/c8dc8834-caa5-4fdb-ba6e-5edbadf8de58)![onligne_image_recycle _2](https://github.com/user-attachments/assets/567aa194-e9ea-4965-a14a-ef0be2c90fac)![SIGNUP _3](https://github.com/user-attachments/assets/e08b4999-23ab-4540-a44b-225aaa2abb0f)
+### 1. Open App
+<img src="https://github.com/user-attachments/assets/c8dc8834-caa5-4fdb-ba6e-5edbadf8de58" width="150">
+
+### 2. Online/Offline Status
+<img src="https://github.com/user-attachments/assets/567aa194-e9ea-4965-a14a-ef0be2c90fac" width="150">
+
+### 3. Signup
+<img src="https://github.com/user-attachments/assets/e08b4999-23ab-4540-a44b-225aaa2abb0f" width="150">
+
+### 4. Send Text Message
+<img src="https://github.com/user-attachments/assets/b164a263-a29a-4d72-aa59-54aec9db4a1a" width="150">
+
+### 5. Send Image Message
+<img src="https://github.com/user-attachments/assets/03ac9290-90e3-4a0b-848a-26a7131053a6" width="150">
+
+### 6. Send Audio Message
+<img src="https://github.com/user-attachments/assets/03771ef5-87d3-49fb-8aa9-fe9cffe0a4ed" width="150">
+
+### 7. Delete Message
+<img src="https://github.com/user-attachments/assets/2c776743-7e06-49ca-81c6-e7ba65288e83" width="150">
+
+### 8. Notification
+<img src="https://github.com/user-attachments/assets/b62c124e-0188-4a74-b00f-8e05a99b6ea8" width="150">
+
+### 9. Kotlin Classes Structure
+<img src="https://github.com/user-attachments/assets/fb8b7a71-2050-4967-ae05-8dbb239939db" width="150">
 
 
 
-![SEND _TEXT_MESSAGE _4_](https://github.com/user-attachments/assets/b164a263-a29a-4d72-aa59-54aec9db4a1a)
-![SEND_IMAGE MESSAGE_5_](https://github.com/user-attachments/assets/03ac9290-90e3-4a0b-848a-26a7131053a6)
-![SEND_AUDIO_MESSAGE_6_ ](https://github.com/user-attachments/assets/03771ef5-87d3-49fb-8aa9-fe9cffe0a4ed)
-
-![DELETE MESSAGE _7_](https://github.com/user-attachments/assets/2c776743-7e06-49ca-81c6-e7ba65288e83)
-![NOTIFICATION _8_](https://github.com/user-attachments/assets/b62c124e-0188-4a74-b00f-8e05a99b6ea8)
