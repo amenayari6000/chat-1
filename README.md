@@ -55,41 +55,45 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 Here are some screenshots of the app:
 <p align="center">
   <figure>
-    <img src="images/opning_app_%200_.jpg" alt="Open App" width="150">
+    <img src="images/opning_app_1_.jpg" alt="Open App" width="150">
     <figcaption>Open App</figcaption>
   </figure>
   <figure>
-    <img src="images/onligne_image_recycle%20.jpg" alt="Online/Offline Status" width="150">
+    <img src="images/onligne_image_recycle_2.jpg" alt="Online/Offline Status" width="150">
     <figcaption>Online/Offline Status</figcaption>
   </figure>
   <figure>
-    <img src="images/SIGNUP%20_3.jpg" alt="Signup" width="150">
+    <img src="images/SIGNUP_3.jpg" alt="Signup" width="150">
     <figcaption>Signup</figcaption>
   </figure>
 </p>
 
 <p align="center">
   <figure>
-    <img src="images/SEND%20_TEXT_MESSAGE%20_4_.jpg" alt="Send Text Message" width="150">
+    <img src="images/SEND_TEXT_MESSAGE_4_.jpg" alt="Send Text Message" width="150">
     <figcaption>Send Text Message</figcaption>
   </figure>
   <figure>
-    <img src="images/SEND_AUDIO_MESSAGE_6_%20.jpg" alt="Send Audio Message" width="150">
-    <figcaption>Send Audio Message</figcaption>
+    <img src="images/SEND_IMAGE_MESSAGE_5_.jpg" alt="Send Image Message" width="150">
+    <figcaption>Send Image Message</figcaption>
   </figure>
   <figure>
-    <img src="images/DELETE%20MESSAGE%20_7_.jpg" alt="Delete Message" width="150">
-    <figcaption>Delete Message</figcaption>
+    <img src="images/SEND_AUDIO_MESSAGE_6_.jpg" alt="Send Audio Message" width="150">
+    <figcaption>Send Audio Message</figcaption>
   </figure>
 </p>
 
 <p align="center">
   <figure>
-    <img src="images/NOTIFICATION%20_8_.jpg" alt="Notification" width="150">
+    <img src="images/DELETE_MESSAGE_7_.jpg" alt="Delete Message" width="150">
+    <figcaption>Delete Message</figcaption>
+  </figure>
+  <figure>
+    <img src="images/NOTIFICATION_8_.jpg" alt="Notification" width="150">
     <figcaption>Notification</figcaption>
   </figure>
   <figure>
-    <img src="images/kotline_classes_structure%20_chat_9_.png" alt="Kotlin Classes Structure" width="150">
+    <img src="images/kotline_classes_structure_chat_9_.png" alt="Kotlin Classes Structure" width="150">
     <figcaption>Kotlin Classes Structure</figcaption>
   </figure>
 </p>
