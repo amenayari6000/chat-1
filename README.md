@@ -52,21 +52,14 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 
 ## Screenshots
 
-Here are some screenshots of the app:
-## App Screenshots
 
-## App Screenshots
+![opning_app_ 1_](https://github.com/user-attachments/assets/c8dc8834-caa5-4fdb-ba6e-5edbadf8de58)![onligne_image_recycle _2](https://github.com/user-attachments/assets/567aa194-e9ea-4965-a14a-ef0be2c90fac)![SIGNUP _3](https://github.com/user-attachments/assets/e08b4999-23ab-4540-a44b-225aaa2abb0f)
 
-## App Screenshots
 
-| [opning_app_1_.jpg](images/opning_app_1_.jpg) | [onligne_image_recycle_2.jpg](images/onligne_image_recycle_2.jpg) | [SIGNUP_3.jpg](images/SIGNUP_3.jpg) |
-|-----------------------------------------------|---------------------------------------------------------------|-----------------------------------|
-| ![opning_app_1_](images/opning_app_1_.jpg) | ![onligne_image_recycle_2](images/onligne_image_recycle_2.jpg) | ![SIGNUP_3](images/SIGNUP_3.jpg) |
 
-| [SEND_TEXT_MESSAGE_4.jpg](images/SEND_TEXT_MESSAGE_4.jpg) | [SEND_IMAGE_MESSAGE_5.jpg](images/SEND_IMAGE_MESSAGE_5.jpg) | [SEND_AUDIO_MESSAGE_6.jpg](images/SEND_AUDIO_MESSAGE_6.jpg) |
-|--------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------|
-| ![SEND_TEXT_MESSAGE_4](images/SEND_TEXT_MESSAGE_4.jpg) | ![SEND_IMAGE_MESSAGE_5](images/SEND_IMAGE_MESSAGE_5.jpg) | ![SEND_AUDIO_MESSAGE_6](images/SEND_AUDIO_MESSAGE_6.jpg) |
+![SEND _TEXT_MESSAGE _4_](https://github.com/user-attachments/assets/b164a263-a29a-4d72-aa59-54aec9db4a1a)
+![SEND_IMAGE MESSAGE_5_](https://github.com/user-attachments/assets/03ac9290-90e3-4a0b-848a-26a7131053a6)
+![SEND_AUDIO_MESSAGE_6_ ](https://github.com/user-attachments/assets/03771ef5-87d3-49fb-8aa9-fe9cffe0a4ed)
 
-| [DELETE_MESSAGE_7.jpg](images/DELETE_MESSAGE_7.jpg) | [NOTIFICATION_8.jpg](images/NOTIFICATION_8.jpg) | [kotline_classes_structure_chat_9.png](images/kotline_classes_structure_chat_9.png) |
-|----------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------|
-| ![DELETE_MESSAGE_7](images/DELETE_MESSAGE_7.jpg) | ![NOTIFICATION_8](images/NOTIFICATION_8.jpg) | ![kotline_classes_structure_chat_9](images/kotline_classes_structure_chat_9.png) |
+![DELETE MESSAGE _7_](https://github.com/user-attachments/assets/2c776743-7e06-49ca-81c6-e7ba65288e83)
+![NOTIFICATION _8_](https://github.com/user-attachments/assets/b62c124e-0188-4a74-b00f-8e05a99b6ea8)
