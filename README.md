@@ -54,6 +54,7 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 
 Here are some screenshots of the app:
 ## App Screenshots
+## App Screenshots
 
 | Open App | Online/Offline Status | Signup |
 |----------|----------------------|--------|
