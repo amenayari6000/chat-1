@@ -53,47 +53,16 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 ## Screenshots
 
 Here are some screenshots of the app:
-<p align="center">
-  <figure>
-    <img src="images/opning_app_1_.jpg" alt="Open App" width="150">
-    <figcaption>Open App</figcaption>
-  </figure>
-  <figure>
-    <img src="images/onligne_image_recycle_2.jpg" alt="Online/Offline Status" width="150">
-    <figcaption>Online/Offline Status</figcaption>
-  </figure>
-  <figure>
-    <img src="images/SIGNUP_3.jpg" alt="Signup" width="150">
-    <figcaption>Signup</figcaption>
-  </figure>
-</p>
+## App Screenshots
 
-<p align="center">
-  <figure>
-    <img src="images/SEND_TEXT_MESSAGE_4_.jpg" alt="Send Text Message" width="150">
-    <figcaption>Send Text Message</figcaption>
-  </figure>
-  <figure>
-    <img src="images/SEND_IMAGE_MESSAGE_5_.jpg" alt="Send Image Message" width="150">
-    <figcaption>Send Image Message</figcaption>
-  </figure>
-  <figure>
-    <img src="images/SEND_AUDIO_MESSAGE_6_.jpg" alt="Send Audio Message" width="150">
-    <figcaption>Send Audio Message</figcaption>
-  </figure>
-</p>
+| Open App | Online/Offline Status | Signup |
+|----------|----------------------|--------|
+| ![Open App](images/opning_app_1_.jpg) | ![Online/Offline Status](images/onligne_image_recycle_2.jpg) | ![Signup](images/SIGNUP_3.jpg) |
 
-<p align="center">
-  <figure>
-    <img src="images/DELETE_MESSAGE_7_.jpg" alt="Delete Message" width="150">
-    <figcaption>Delete Message</figcaption>
-  </figure>
-  <figure>
-    <img src="images/NOTIFICATION_8_.jpg" alt="Notification" width="150">
-    <figcaption>Notification</figcaption>
-  </figure>
-  <figure>
-    <img src="images/kotline_classes_structure_chat_9_.png" alt="Kotlin Classes Structure" width="150">
-    <figcaption>Kotlin Classes Structure</figcaption>
-  </figure>
-</p>
+| Send Text Message | Send Image Message | Send Audio Message |
+|------------------|------------------|------------------|
+| ![Send Text Message](images/SEND_TEXT_MESSAGE_4_.jpg) | ![Send Image Message](images/SEND_IMAGE_MESSAGE_5_.jpg) | ![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_.jpg) |
+
+| Delete Message | Notification | Kotlin Classes Structure |
+|---------------|-------------|-------------------------|
+| ![Delete Message](images/DELETE_MESSAGE_7_.jpg) | ![Notification](images/NOTIFICATION_8_.jpg) | ![Kotlin Classes Structure](images/kotline_classes_structure_chat_9_.png) |
