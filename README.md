@@ -57,6 +57,8 @@ Here are some screenshots of the app:
 
 ## App Screenshots
 
+## App Screenshots
+
 | [opning_app_1_.jpg](images/opning_app_1_.jpg) | [onligne_image_recycle_2.jpg](images/onligne_image_recycle_2.jpg) | [SIGNUP_3.jpg](images/SIGNUP_3.jpg) |
 |-----------------------------------------------|---------------------------------------------------------------|-----------------------------------|
 | ![opning_app_1_](images/opning_app_1_.jpg) | ![onligne_image_recycle_2](images/onligne_image_recycle_2.jpg) | ![SIGNUP_3](images/SIGNUP_3.jpg) |
