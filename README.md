@@ -53,13 +53,19 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 ## Screenshots
 
 Here are some screenshots of the app:
+<p align="center">
+  <img src="images/opning_app_%200_.jpg" alt="Open App" width="150">
+  <img src="images/onligne_image_recycle%20.jpg" alt="Online/Offline Status" width="150">
+  <img src="images/SIGNUP%20_3.jpg" alt="Signup" width="150">
+</p>
 
-![Open App](images/opning_app_%200_.jpg)
-![Online/Offline Status](images/onligne_image_recycle%20.jpg)
-![Signup](images/SIGNUP%20_3.jpg)
-![Send Text Message](images/SEND%20_TEXT_MESSAGE%20_4_.jpg)
-![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_%20.jpg)
-![Delete Message](images/DELETE%20MESSAGE%20_7_.jpg)
-![Notification](images/NOTIFICATION%20_8_.jpg)
-![Kotlin Classes Structure](images/kotline_classes_structure%20_chat_9_.png)
+<p align="center">
+  <img src="images/SEND%20_TEXT_MESSAGE%20_4_.jpg" alt="Send Text Message" width="150">
+  <img src="images/SEND_AUDIO_MESSAGE_6_%20.jpg" alt="Send Audio Message" width="150">
+  <img src="images/DELETE%20MESSAGE%20_7_.jpg" alt="Delete Message" width="150">
+</p>
 
+<p align="center">
+  <img src="images/NOTIFICATION%20_8_.jpg" alt="Notification" width="150">
+  <img src="images/kotline_classes_structure%20_chat_9_.png" alt="Kotlin Classes Structure" width="150">
+</p>
