@@ -62,7 +62,7 @@ Here are some screenshots of the app:
 
 | Send Text Message | Send Image Message | Send Audio Message |
 |------------------|------------------|------------------|
-| ![Send Text Message](images/SEND_TEXT_MESSAGE_4_.jpg) | ![Send Image Message](images/SEND_IMAGE_MESSAGE_5_.jpg) | ![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_.jpg) |
+| ![Send Text Message](images/SEND_TEXT_MESSAGE_4_.jpg) | ![Send Image Message](images/SEND_IMAGE_MESSAGE_5_.jpg) | ![Send Audio Message](images/SEND_AUDIO_MESSAGE_6_ .jpg) |
 
 | Delete Message | Notification | Kotlin Classes Structure |
 |---------------|-------------|-------------------------|
