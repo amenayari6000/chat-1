@@ -50,7 +50,9 @@ The following technologies and tools are used in the development of this chat ap
 
 Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZKGc)
 
-## Screenshots
+##  link google play :
+https://play.google.com/store/apps/details?id=com.walid591.chat
+
 
 ## App Screenshots
 
@@ -81,6 +83,4 @@ Check out the demo of the app on YouTube: [Watch Demo](https://youtu.be/llaznWZZ
 ### 9. Kotlin Classes Structure
 <img src="https://github.com/user-attachments/assets/fb8b7a71-2050-4967-ae05-8dbb239939db" width="150">
 
-#### link google play :
-https://play.google.com/store/apps/details?id=com.walid591.chat
 
